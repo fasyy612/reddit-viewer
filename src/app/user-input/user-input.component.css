@@ -1,0 +1,23 @@
+#input-component {
+    padding: 10px 0px;
+}
+
+#input-component h4 {
+    margin: 0;
+    padding: 8px 0px;
+}
+
+#input-component input {
+    width: 200px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#input-component select {
+    width: 200px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}

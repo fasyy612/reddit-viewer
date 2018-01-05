@@ -1,0 +1,16 @@
+<div *ngIf="post">
+  <h2>{{ post.title | uppercase }} Details</h2>
+  <img [src]="post.thumbnail" (error)="errorHandler($event)" />
+  <div>{{post.selftext}}</div>
+
+  <h2>Comments</h2>
+
+  <ul class="comments">
+    <li *ngFor="let comment of comments">
+        <h3>{{comment.author}}</h3>
+        <p>{{comment.body}}</p>
+    </li>
+  </ul>
+
+  <button (click)="goBack()">go back</button>
+</div>

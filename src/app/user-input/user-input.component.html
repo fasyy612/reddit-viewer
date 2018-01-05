@@ -1,0 +1,10 @@
+<div id="input-component">
+  <h4>Subreddit Name</h4>
+  <input [(ngModel)]="subreddit" type="text" (keyup.enter)="updateSubreddit()" />
+  <h4>Number of Posts</h4>
+  <select [(ngModel)]="selectedItem" (ngModelChange)="updateLimit()">
+      <option value="25">25</option>
+      <option value="10">10</option>
+      <option value="5">5</option>
+    </select>
+</div>
